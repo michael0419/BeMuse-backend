@@ -1,0 +1,7 @@
+#Local Files
+
+__pycache__/
+
+# Not Needed
+
+Dockerfile
