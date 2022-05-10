@@ -2,4 +2,5 @@ pydantic
 fastapi
 numpy
 uvicorn
+gunicorn
 tensorflow-cpu
