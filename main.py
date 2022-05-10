@@ -19,8 +19,6 @@ from numpy import max
 from numpy import array
 from json import dumps
 
-from PIL import Image 
-
 import io
 
 from uvicorn import run
