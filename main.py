@@ -10,7 +10,7 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import Rescaling
 
-from tensorflow.io import decode_image
+from tensorflow.io import decode_jpeg
 from tensorflow.image import rgb_to_grayscale
 from tensorflow.nn import softmax
 
@@ -69,7 +69,7 @@ async def get_net_image_prediction(imageEncoded: base64Img = None):
     #img = image
     #image_stream = io.StringIO(image)
 
-    tensor = decode_image(image, channels=3, dtype= 'float32')
+    tensor = decode_jpeg(image)
     tensor = expand_dims(tensor, 0)
     
     tensor = rgb_to_grayscale(tensor)
