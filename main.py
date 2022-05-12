@@ -83,6 +83,7 @@ async def get_net_image_prediction(imageEncoded: base64Img = None):
     
 
     pred = model.predict(tensor)
+    print(pred)
     score = softmax(pred[0])
 
     class_prediction = class_predictions[argmax(score)]
