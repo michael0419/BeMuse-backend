@@ -1,2 +1,9 @@
 # BeMuse-backend
-Api backend for DeMuse
+Api backend for BeMuse
+
+Implemented with FAST api 
+Hosted on Heroku
+
+Takes in a 48x48 base64 encoded jpeg image
+
+Model developed in this [Google Colab Notebook](https://colab.research.google.com/drive/1ZBBU3FYsp1kkCHW8aF2DVX710-DlAD5n?usp=sharing) 
